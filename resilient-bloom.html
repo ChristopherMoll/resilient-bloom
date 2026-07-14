@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resilient Bloom | In-Home Physical Therapy Asheville NC | Postpartum & Pelvic Floor PT</title>
+<meta name="description" content="Resilient Bloom offers in-home physical therapy in Asheville, NC. Specializing in postpartum PT, pelvic floor PT, C-section recovery, and orthopedic care. Cash pay physical therapy — your physical therapist comes to you. Serving all of Asheville, NC." />
+<meta name="keywords" content="in-home physical therapy Asheville NC, cash pay physical therapy Asheville, physical therapist comes to you Asheville, postpartum PT Asheville, pelvic floor PT Asheville, mobile physical therapy Asheville, Asheville PT, concierge physical therapy Asheville, C-section recovery Asheville, pelvic health Asheville NC" />
+<meta property="og:title" content="Resilient Bloom | In-Home Physical Therapy Asheville NC" />
+<meta property="og:description" content="Postpartum, pelvic floor, prenatal & orthopedic in-home physical therapy in Asheville, NC. Cash pay. Your PT comes to you." />
+<meta property="og:type" content="website" />
+<link rel="canonical" href="https://www.resilientbloompt.com" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<!-- Structured Data for Google Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PhysicalTherapy",
+  "name": "Resilient Bloom Concierge Physical Therapy",
+  "description": "In-home concierge physical therapy in Asheville, NC specializing in postpartum recovery, C-section rehabilitation, pelvic floor PT, prenatal care, and orthopedic PT. Cash pay. Your physical therapist comes to you.",
+  "telephone": "(828) 367-7064",
+  "email": "hello@resilientbloompt.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Asheville",
+    "addressRegion": "NC",
+    "addressCountry": "US"
+  },
+  "areaServed": "Asheville, NC",
+  "url": "https://www.resilientbloompt.com",
+  "sameAs": ["https://www.instagram.com/resilientbloom.pt"],
+  "priceRange": "$$",
+  "paymentAccepted": "Cash, HSA, FSA"
+}
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:      #1B2F5E;
+    --navy-dark: #0F1E3D;
+    --gold:      #C4956A;
+    --gold-light:#D4A87A;
+    --blush:     #E8B4A8;
+    --mauve:     #C4808A;
+    --cream:     #F9F3EE;
+    --cream-dark:#F0E6DC;
+    --text-dark: #1A1A2E;
+    --text-mid:  #4A4A6A;
+    --red-soft:  #C0444A;
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Jost', sans-serif; font-weight: 300; background: var(--cream); color: var(--text-dark); overflow-x: hidden; }
+
+  /* NAV */
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 4rem; background: rgba(15,30,61,0.96); backdrop-filter: blur(8px); }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 400; letter-spacing: 0.08em; color: var(--gold); text-decoration: none; display: flex; flex-direction: column; line-height: 1.2; }
+  .nav-logo span { font-size: 0.65rem; font-family: 'Jost', sans-serif; font-weight: 300; letter-spacing: 0.22em; text-transform: uppercase; color: var(--blush); }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: white; border: none; cursor: pointer; padding: 0.6rem 1.5rem; font-family: 'Jost', sans-serif; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--gold-light); }
+
+  /* HERO */
+  .hero { min-height: 100vh; background: var(--navy-dark); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; padding: 7rem 2rem 5rem; }
+  .hero-petals { position: absolute; inset: 0; pointer-events: none; }
+  .petal { position: absolute; border-radius: 60% 40% 70% 30% / 50% 60% 40% 50%; opacity: 0.13; }
+  .petal-1 { width: 420px; height: 420px; background: var(--blush); top: -80px; right: -60px; transform: rotate(25deg); }
+  .petal-2 { width: 300px; height: 300px; background: var(--mauve); bottom: -40px; left: -60px; transform: rotate(-15deg); opacity: 0.1; }
+  .petal-3 { width: 200px; height: 200px; background: var(--gold); top: 40%; left: 5%; transform: rotate(45deg); opacity: 0.07; }
+  .hero-inner { position: relative; z-index: 2; max-width: 820px; text-align: center; }
+  .hero-eyebrow { font-family: 'Jost', sans-serif; font-size: 0.7rem; font-weight: 400; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.6rem; display: block; }
+  .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 300; line-height: 1.15; color: white; margin-bottom: 1.6rem; }
+  .hero h1 em { font-style: italic; color: var(--gold); }
+  .hero-sub { font-size: 1rem; font-weight: 300; line-height: 1.8; color: rgba(255,255,255,0.68); max-width: 580px; margin: 0 auto 2.8rem; }
+  .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn-primary { background: var(--gold); color: white; border: none; cursor: pointer; padding: 0.9rem 2.4rem; font-family: 'Jost', sans-serif; font-size: 0.8rem; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, transform 0.15s; display: inline-block; }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .btn-outline { background: transparent; color: white; cursor: pointer; border: 1px solid rgba(255,255,255,0.35); padding: 0.9rem 2.4rem; font-family: 'Jost', sans-serif; font-size: 0.8rem; letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; transition: border-color 0.2s, transform 0.15s; display: inline-block; }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-1px); }
+  .hero-stat-bar { position: absolute; bottom: 0; left: 0; right: 0; display: flex; justify-content: center; background: rgba(196,149,106,0.12); border-top: 1px solid rgba(196,149,106,0.2); }
+  .stat-item { padding: 1.2rem 3rem; text-align: center; border-right: 1px solid rgba(196,149,106,0.15); }
+  .stat-item:last-child { border-right: none; }
+  .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 300; color: var(--gold); display: block; line-height: 1; }
+  .stat-label { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-top: 0.3rem; display: block; }
+
+  /* SECTIONS */
+  section { padding: 6rem 2rem; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  .section-eyebrow { font-size: 0.68rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 1rem; }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 300; color: var(--navy); line-height: 1.2; margin-bottom: 1.4rem; }
+  .section-title em { font-style: italic; color: var(--mauve); }
+  .section-body { font-size: 0.95rem; line-height: 1.9; color: var(--text-mid); max-width: 600px; }
+
+  /* ADVOCACY */
+  .advocacy { background: var(--navy); }
+  .advocacy .section-title { color: white; }
+  .advocacy .section-body { color: rgba(255,255,255,0.65); }
+  .advocacy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: rgba(196,149,106,0.15); margin-top: 3.5rem; border: 1px solid rgba(196,149,106,0.15); }
+  .advocacy-card { background: var(--navy); padding: 2.4rem 2rem; text-align: center; }
+  .advocacy-card .big { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 300; color: var(--gold); display: block; line-height: 1; }
+  .advocacy-card .label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin-top: 0.5rem; display: block; line-height: 1.5; }
+  .advocacy-closing { margin-top: 3rem; padding: 2rem 2.4rem; border-left: 3px solid var(--gold); background: rgba(196,149,106,0.06); }
+  .advocacy-closing p { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-style: italic; color: white; line-height: 1.6; font-weight: 300; }
+
+  /* SERVICES */
+  .services { background: var(--cream); }
+  .services-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-bottom: 4rem; }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+  .service-card { border: 1px solid var(--cream-dark); padding: 2.4rem 2rem; background: white; position: relative; overflow: hidden; transition: box-shadow 0.2s, transform 0.2s; }
+  .service-card:hover { box-shadow: 0 8px 32px rgba(27,47,94,0.08); transform: translateY(-2px); }
+  .service-card.featured { border-color: var(--gold); background: var(--navy); }
+  .service-card.featured .service-title { color: white; }
+  .service-card.featured .service-body { color: rgba(255,255,255,0.65); }
+  .service-badge { font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 1rem; }
+  .service-icon { font-size: 1.6rem; margin-bottom: 1rem; display: block; }
+  .service-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 400; color: var(--navy); margin-bottom: 0.8rem; }
+  .service-body { font-size: 0.88rem; line-height: 1.8; color: var(--text-mid); }
+  .service-includes { margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid rgba(196,149,106,0.2); }
+  .service-includes li { font-size: 0.8rem; color: var(--text-mid); list-style: none; padding: 0.25rem 0; padding-left: 1rem; position: relative; }
+  .service-includes li::before { content: '—'; position: absolute; left: 0; color: var(--gold); }
+  .service-card.featured .service-includes li { color: rgba(255,255,255,0.65); }
+
+  /* RED FLAGS BOX */
+  .red-flags-box { margin-top: 1.4rem; padding: 1rem 1.2rem; background: rgba(192,68,74,0.08); border-left: 3px solid var(--red-soft); }
+  .red-flags-box .rf-title { font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red-soft); margin-bottom: 0.5rem; display: block; font-weight: 500; }
+  .red-flags-box li { font-size: 0.78rem; color: var(--text-mid); list-style: none; padding: 0.2rem 0 0.2rem 1rem; position: relative; line-height: 1.5; }
+  .red-flags-box li::before { content: '!'; position: absolute; left: 0; color: var(--red-soft); font-weight: 500; font-size: 0.7rem; }
+  .service-card.featured .red-flags-box { background: rgba(192,68,74,0.12); }
+  .service-card.featured .red-flags-box li { color: rgba(255,255,255,0.7); }
+
+  /* WHY */
+  .why { background: var(--cream-dark); }
+  .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+  .why-list { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1.8rem; }
+  .why-item { display: flex; gap: 1.2rem; align-items: flex-start; }
+  .why-num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 300; color: var(--gold); line-height: 1; flex-shrink: 0; width: 2rem; text-align: right; }
+  .why-text h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 400; color: var(--navy); margin-bottom: 0.3rem; }
+  .why-text p { font-size: 0.86rem; line-height: 1.75; color: var(--text-mid); }
+  .why-visual { background: var(--navy); padding: 3.5rem 2.5rem; position: relative; }
+  .why-visual::before { content: ''; position: absolute; top: -12px; right: -12px; width: 100%; height: 100%; border: 1px solid var(--gold); z-index: 0; }
+  .why-visual-inner { position: relative; z-index: 1; }
+  .why-quote { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-style: italic; font-weight: 300; color: white; line-height: 1.6; margin-bottom: 1.5rem; }
+  .why-quote-attr { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); }
+
+  /* HOW */
+  .how { background: white; }
+  .how-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0; margin-top: 4rem; position: relative; }
+  .how-steps::after { content: ''; position: absolute; top: 2.5rem; left: 10%; right: 10%; height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); pointer-events: none; }
+  .how-step { padding: 0 2rem; text-align: center; position: relative; }
+  .how-step-num { width: 5rem; height: 5rem; border-radius: 50%; border: 1px solid var(--gold); background: white; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 300; color: var(--gold); position: relative; z-index: 1; }
+  .how-step h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 400; color: var(--navy); margin-bottom: 0.6rem; }
+  .how-step p { font-size: 0.84rem; line-height: 1.75; color: var(--text-mid); }
+
+  /* ABOUT */
+  .about { background: var(--navy); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; align-items: start; }
+  .about-logo-wrap { display: flex; align-items: center; justify-content: center; padding: 3rem; background: rgba(196,149,106,0.06); border: 1px solid rgba(196,149,106,0.15); }
+  .about-logo-icon { width: 160px; height: 160px; border-radius: 50%; border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; background: rgba(196,149,106,0.08); }
+  .about-logo-icon svg { width: 90px; height: 90px; }
+  .about .section-title { color: white; }
+  .about .section-body { color: rgba(255,255,255,0.65); margin-bottom: 1.2rem; }
+  .about-credentials { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.8rem; }
+  .cred-tag { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid rgba(196,149,106,0.4); color: var(--gold); padding: 0.4rem 0.9rem; }
+
+  /* FAQ */
+  .faq { background: var(--cream); }
+  .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 3rem; }
+  .faq-item { background: white; border: 1px solid var(--cream-dark); padding: 2rem; }
+  .faq-item h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 400; color: var(--navy); margin-bottom: 0.7rem; }
+  .faq-item p { font-size: 0.86rem; line-height: 1.8; color: var(--text-mid); }
+
+  /* CONTACT */
+  .contact { background: var(--navy-dark); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
+  .contact .section-title { color: white; }
+  .contact .section-body { color: rgba(255,255,255,0.65); }
+  .contact-methods { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1.2rem; }
+  .contact-method { display: flex; gap: 1rem; align-items: center; }
+  .contact-method-icon { width: 2.5rem; height: 2.5rem; border: 1px solid rgba(196,149,106,0.4); display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1rem; flex-shrink: 0; }
+  .contact-method-text span { display: block; font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 0.15rem; }
+  .contact-method-text a, .contact-method-text p { font-size: 0.9rem; color: white; text-decoration: none; }
+  .contact-method-text a:hover { color: var(--gold); }
+  .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .contact-form input, .contact-form select, .contact-form textarea { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); color: white; padding: 0.9rem 1.1rem; font-family: 'Jost', sans-serif; font-size: 0.85rem; font-weight: 300; outline: none; transition: border-color 0.2s; width: 100%; }
+  .contact-form input::placeholder, .contact-form textarea::placeholder { color: rgba(255,255,255,0.3); }
+  .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { border-color: var(--gold); }
+  .contact-form select option { background: var(--navy-dark); color: white; }
+  .contact-form textarea { resize: vertical; min-height: 120px; }
+
+  /* FOOTER */
+  footer { background: var(--navy-dark); border-top: 1px solid rgba(196,149,106,0.15); padding: 2rem 4rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: var(--gold); letter-spacing: 0.06em; }
+  .footer-logo span { font-family: 'Jost', sans-serif; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.3); display: block; }
+  .footer-copy { font-size: 0.72rem; color: rgba(255,255,255,0.25); letter-spacing: 0.06em; }
+  .footer-links { display: flex; gap: 1.8rem; }
+  .footer-links a { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.3); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--gold); }
+
+  /* SEO hidden region */
+  .seo-keywords { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero-stat-bar { display: none; }
+    .services-intro { grid-template-columns: 1fr; gap: 2rem; }
+    .why-grid { grid-template-columns: 1fr; }
+    .why-visual { display: none; }
+    .about-grid { grid-template-columns: 1fr; }
+    .about-logo-wrap { display: none; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .how-steps::after { display: none; }
+    .form-row { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; padding: 2rem; }
+    section { padding: 4rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Hidden SEO keyword block -->
+<div class="seo-keywords" aria-hidden="true">
+  in-home physical therapy Asheville NC, cash pay physical therapy Asheville, physical therapist comes to you Asheville, mobile physical therapy Asheville, postpartum PT Asheville, pelvic floor PT Asheville, Asheville PT, concierge PT Asheville NC
+</div>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#home">Resilient Bloom <span>Concierge Physical Therapy · Asheville, NC</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Book Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-petals">
+    <div class="petal petal-1"></div>
+    <div class="petal petal-2"></div>
+    <div class="petal petal-3"></div>
+  </div>
+  <div class="hero-inner">
+    <span class="hero-eyebrow">In-Home Physical Therapy · Asheville, NC · Cash Pay</span>
+    <h1>You had major surgery.<br>You deserve to <em>heal.</em></h1>
+    <p class="hero-sub">Resilient Bloom is Asheville's concierge mobile physical therapy practice — your physical therapist comes to you, beginning immediately after you come home. Postpartum, pelvic floor, prenatal, C-section recovery, and orthopedic care. Cash pay. No waiting rooms. No driving.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Book a Consultation</a>
+      <a href="#services" class="btn-outline">Explore Services</a>
+    </div>
+  </div>
+  <div class="hero-stat-bar">
+    <div class="stat-item">
+      <span class="stat-num">1.17M</span>
+      <span class="stat-label">C-sections per year in the US</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">7</span>
+      <span class="stat-label">Layers of tissue cut</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">0</span>
+      <span class="stat-label">Standard PT visits ordered</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num">24 wks</span>
+      <span class="stat-label">PT after ACL surgery</span>
+    </div>
+  </div>
+</section>
+
+<!-- ADVOCACY -->
+<section class="advocacy" id="advocacy">
+  <div class="container">
+    <span class="section-eyebrow">The Gap We're Closing</span>
+    <h2 class="section-title" style="color:white;">The most common surgery in America<br>gets zero standard rehabilitation.</h2>
+    <p class="section-body">ACL reconstruction receives 24 weeks of physical therapy. Hip replacement receives 14 weeks. A C-section — 7 layers of surgery, major abdominal trauma, performed over 1.17 million times per year — receives a pamphlet and a 6-week checkup. As your Asheville postpartum PT, Resilient Bloom exists to change that — bringing in-home physical therapy directly to you, starting the moment you need it.</p>
+    <div class="advocacy-grid">
+      <div class="advocacy-card">
+        <span class="big">24 wks</span>
+        <span class="label">Standard PT after ACL reconstruction</span>
+      </div>
+      <div class="advocacy-card">
+        <span class="big">14 wks</span>
+        <span class="label">Standard PT after hip replacement</span>
+      </div>
+      <div class="advocacy-card">
+        <span class="big">10 wks</span>
+        <span class="label">Standard PT after spinal fusion</span>
+      </div>
+      <div class="advocacy-card">
+        <span class="big" style="color:var(--mauve);">0 wks</span>
+        <span class="label">Standard PT after cesarean section</span>
+      </div>
+    </div>
+    <div class="advocacy-closing">
+      <p>"You grew a human, survived major surgery, and came home to care for a newborn — Resilient Bloom believes you deserve to heal too, and we will come to you."</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-intro">
+      <div>
+        <span class="section-eyebrow">Mobile Physical Therapy Asheville, NC</span>
+        <h2 class="section-title">Care that meets you<br><em>where you are.</em></h2>
+      </div>
+      <p class="section-body" style="padding-top:1rem;">Resilient Bloom is Asheville's in-home physical therapy practice for women and families. Every session is one-on-one, cash pay, and held in your home — your physical therapist comes to you. No waiting rooms, no driving while recovering, no generic group classes. Just expert, individualized care from the moment you need it most.</p>
+    </div>
+    <div class="services-grid">
+
+      <!-- C-SECTION FEATURED -->
+      <div class="service-card featured">
+        <span class="service-badge">⭐ Signature Service · Most Requested</span>
+        <span class="service-icon">🌸</span>
+        <h3 class="service-title">C-Section Recovery</h3>
+        <p class="service-body">Comprehensive in-home rehabilitation beginning as soon as you're discharged home. As Asheville's postpartum PT who comes to you, we provide the rehabilitation that the system doesn't automatically order — but every C-section mom deserves.</p>
+        <ul class="service-includes">
+          <li>Scar tissue mobilization & desensitization</li>
+          <li>Core & pelvic floor reconnection</li>
+          <li>Diastasis recti assessment & treatment</li>
+          <li>Pain management & mobility restoration</li>
+          <li>Return-to-activity progression</li>
+          <li>Vital signs monitoring at each visit</li>
+        </ul>
+        <div class="red-flags-box">
+          <span class="rf-title">⚠ Post-Surgery Red Flag Screening Included</span>
+          <ul>
+            <li>Fever, unusual redness or warmth at incision site</li>
+            <li>Increased swelling, discharge, or wound separation</li>
+            <li>Signs of blood clot (DVT) — calf pain, swelling, warmth</li>
+            <li>Shortness of breath or chest pain</li>
+            <li>Abnormal blood pressure or heart rate</li>
+            <li>Severe headache or vision changes</li>
+          </ul>
+          <p style="font-size:0.75rem; color:var(--text-mid); margin-top:0.6rem; color:rgba(255,255,255,0.5);">We monitor your vitals and screen for red flags every visit — and refer immediately when needed.</p>
+        </div>
+      </div>
+
+      <!-- POSTPARTUM -->
+      <div class="service-card">
+        <span class="service-badge">Postpartum · All Birth Types</span>
+        <span class="service-icon">🤱</span>
+        <h3 class="service-title">Postpartum Recovery</h3>
+        <p class="service-body">In-home postpartum physical therapy in Asheville for all new mothers — vaginal and cesarean — navigating the physical demands of new parenthood while your body heals from birth.</p>
+        <ul class="service-includes">
+          <li>Pelvic floor assessment & rehabilitation</li>
+          <li>Core strength rebuilding</li>
+          <li>Posture & feeding position guidance</li>
+          <li>Urinary & bowel dysfunction treatment</li>
+          <li>Vital signs & post-surgical red flag monitoring</li>
+        </ul>
+        <div class="red-flags-box">
+          <span class="rf-title">⚠ Red Flags We Screen For</span>
+          <ul>
+            <li>Heavy postpartum bleeding (soaking more than 1 pad/hour)</li>
+            <li>Signs of infection at perineal or abdominal sites</li>
+            <li>Postpartum preeclampsia — headache, blurred vision, swelling</li>
+            <li>Elevated blood pressure or irregular heart rate</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PELVIC FLOOR -->
+      <div class="service-card">
+        <span class="service-badge">Pelvic Floor · Asheville, NC</span>
+        <span class="service-icon">💜</span>
+        <h3 class="service-title">Pelvic Floor PT</h3>
+        <p class="service-body">Specialized pelvic floor physical therapy in Asheville for pain, dysfunction, prolapse, incontinence, and sexual health — at every stage of life. Your pelvic floor PT comes directly to your home.</p>
+        <ul class="service-includes">
+          <li>Pelvic organ prolapse support</li>
+          <li>Urinary & fecal incontinence</li>
+          <li>Pelvic pain & dyspareunia</li>
+          <li>Bladder urgency & frequency</li>
+          <li>Endometriosis & vulvodynia management</li>
+        </ul>
+      </div>
+
+      <!-- PRENATAL -->
+      <div class="service-card">
+        <span class="service-badge">Prenatal · In-Home</span>
+        <span class="service-icon">🌱</span>
+        <h3 class="service-title">Prenatal PT</h3>
+        <p class="service-body">Proactive in-home physical therapy throughout pregnancy to keep you strong, comfortable, and prepared for birth — from an Asheville PT who comes to you at every stage.</p>
+        <ul class="service-includes">
+          <li>Pregnancy-related back & pelvic pain</li>
+          <li>Birth preparation & pushing techniques</li>
+          <li>Diastasis recti prevention</li>
+          <li>Mobility & strength for labor</li>
+          <li>Round ligament & SI joint pain</li>
+        </ul>
+      </div>
+
+      <!-- ORTHOPEDIC / MOBILE -->
+      <div class="service-card">
+        <span class="service-badge">Orthopedic · Mobile PT Asheville</span>
+        <span class="service-icon">🦴</span>
+        <h3 class="service-title">Orthopedic & Mobile PT</h3>
+        <p class="service-body">In-home orthopedic physical therapy in Asheville for post-surgical recovery, injury, and musculoskeletal conditions — for patients of all ages. Your physical therapist comes to you, no matter where you are in recovery.</p>
+        <ul class="service-includes">
+          <li>Post-surgical rehab (knee, hip, shoulder, spine)</li>
+          <li>Sports & soft tissue injuries</li>
+          <li>Chronic pain management</li>
+          <li>Balance & fall prevention</li>
+          <li>Vital signs monitored each visit</li>
+        </ul>
+        <div class="red-flags-box">
+          <span class="rf-title">⚠ Post-Surgical Red Flag Monitoring</span>
+          <ul>
+            <li>Blood pressure, heart rate & oxygen saturation checked each visit</li>
+            <li>Signs of deep vein thrombosis (DVT) — leg pain, swelling, warmth</li>
+            <li>Wound changes — increased redness, drainage, or reopening</li>
+            <li>Fever or systemic signs of infection</li>
+            <li>Sudden worsening pain or loss of function</li>
+            <li>Neurological changes — numbness, weakness, tingling</li>
+          </ul>
+          <p style="font-size:0.75rem; color:var(--text-mid); margin-top:0.6rem;">We take vitals and screen for red flags at every mobile PT visit — and coordinate with your surgeon when needed.</p>
+        </div>
+      </div>
+
+      <!-- CTA CARD -->
+      <div class="service-card" style="background:var(--cream-dark); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding: 3rem 2rem;">
+        <span style="font-family:'Cormorant Garamond',serif; font-size:1.35rem; color:var(--navy); font-style:italic; margin-bottom:1rem;">Not sure which service is right for you?</span>
+        <p style="font-size:0.85rem; color:var(--text-mid); margin-bottom:0.6rem; line-height:1.7;">A free 15-minute phone consultation will help us find the best fit for your recovery.</p>
+        <p style="font-size:0.78rem; color:var(--gold); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:1.8rem;">Cash pay · HSA & FSA accepted</p>
+        <a href="#contact" class="btn-primary">Schedule Free Consult</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="why-grid">
+      <div>
+        <span class="section-eyebrow">Why In-Home PT in Asheville</span>
+        <h2 class="section-title">Healing happens better<br><em>at home.</em></h2>
+        <p class="section-body">Traditional outpatient PT requires you to drive, park, wait, and perform — often before you're ready. With Resilient Bloom's mobile physical therapy in Asheville, your physical therapist comes to you, removing every barrier between you and your recovery.</p>
+        <div class="why-list">
+          <div class="why-item">
+            <span class="why-num">1</span>
+            <div class="why-text">
+              <h4>Care starts immediately</h4>
+              <p>Our in-home physical therapy in Asheville begins within days of discharge — not weeks. Early intervention leads to faster, more complete recovery.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">2</span>
+            <div class="why-text">
+              <h4>Cash pay means no insurance delays</h4>
+              <p>As a cash pay physical therapy practice in Asheville, you book directly with us — no authorizations, no referrals required. HSA and FSA accepted. Superbills provided.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">3</span>
+            <div class="why-text">
+              <h4>Truly one-on-one</h4>
+              <p>Every minute of every session is yours. No aides, no shared time, no distractions — just your Asheville PT, fully focused on you.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <span class="why-num">4</span>
+            <div class="why-text">
+              <h4>Your physical therapist comes to you</h4>
+              <p>Newborn on your lap, sore from surgery, exhausted — we work with your real life. Serving all of Asheville, NC and surrounding areas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <div class="why-visual-inner">
+          <p class="why-quote">"Patients who received no rehabilitation following hip surgery had more than twice the mortality risk compared with those receiving intensive hospital rehabilitation — yet C-section moms receive no standard PT at all."</p>
+          <span class="why-quote-attr">— Published Research, PMC/NIH</span>
+          <div style="margin-top:2.5rem; padding-top:2rem; border-top:1px solid rgba(196,149,106,0.2);">
+            <p style="font-size:0.82rem; color:rgba(255,255,255,0.5); line-height:1.7;">Despite more than 1.17 million cesarean births annually in the United States, physical therapy is not part of routine post-C-section care. Resilient Bloom — Asheville's in-home postpartum PT — is part of changing that standard, one home visit at a time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="container">
+    <div style="text-align:center; max-width:560px; margin:0 auto;">
+      <span class="section-eyebrow">How Mobile PT Works in Asheville</span>
+      <h2 class="section-title" style="margin:0 auto;">From surgery to strength,<br><em>step by step.</em></h2>
+    </div>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-step-num">1</div>
+        <h4>Free Consultation</h4>
+        <p>A 15-minute call to understand your needs, answer questions about in-home PT, and confirm we're the right fit for your recovery.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">2</div>
+        <h4>We Come to You</h4>
+        <p>Your first visit happens in your Asheville home — as soon as days after discharge. Your physical therapist comes to you. No driving required.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">3</div>
+        <h4>Personalized Plan</h4>
+        <p>A full evaluation — including vital signs and red flag screening — leads to a care plan built around your body, your birth, and your goals.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">4</div>
+        <h4>Ongoing Support</h4>
+        <p>Regular mobile PT sessions, progress tracking, and open communication as you move from recovery to full strength.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-logo-wrap">
+        <div class="about-logo-icon">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="48" stroke="#C4956A" stroke-width="1.5"/>
+            <path d="M50 20 C50 20 35 35 35 50 C35 62 42 70 50 75 C58 70 65 62 65 50 C65 35 50 20 50 20Z" stroke="#C4956A" stroke-width="1.2" fill="none"/>
+            <line x1="50" y1="75" x2="50" y2="88" stroke="#C4956A" stroke-width="1.2"/>
+            <line x1="42" y1="82" x2="58" y2="82" stroke="#C4956A" stroke-width="1.2"/>
+            <circle cx="50" cy="17" r="3" fill="#C4956A"/>
+          </svg>
+        </div>
+      </div>
+      <div>
+        <span class="section-eyebrow">About Resilient Bloom · Asheville, NC</span>
+        <h2 class="section-title">Your Asheville PT,<br><em>at your door.</em></h2>
+        <p class="section-body">Resilient Bloom Concierge Physical Therapy was founded on a single belief: that every woman who undergoes surgery — especially to bring life into the world — deserves the same standard of rehabilitation as any other surgical patient.</p>
+        <p class="section-body" style="margin-top:1rem;">As a Doctor of Physical Therapy (PT, DPT) and Asheville's dedicated in-home postpartum and pelvic floor physical therapist, I provide individualized, evidence-based care in the comfort and privacy of your home. This is cash pay physical therapy in Asheville — no insurance gatekeeping, no referrals required, no waiting. Just your physical therapist coming to you, on your schedule, from day one.</p>
+        <div class="about-credentials">
+          <span class="cred-tag">PT, DPT</span>
+          <span class="cred-tag">Doctor of Physical Therapy</span>
+          <span class="cred-tag">Pelvic Floor Specialist</span>
+          <span class="cred-tag">Postpartum PT</span>
+          <span class="cred-tag">Orthopedic PT</span>
+          <span class="cred-tag">Asheville, NC</span>
+          <span class="cred-tag">Cash Pay · HSA · FSA</span>
+          <span class="cred-tag">Mobile · In-Home</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div style="max-width:560px;">
+      <span class="section-eyebrow">Frequently Asked Questions</span>
+      <h2 class="section-title">Everything you need<br><em>to know.</em></h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>How soon after a C-section can I start in-home PT?</h4>
+        <p>We can begin within days of your discharge home. As Asheville's postpartum PT who comes to you, early intervention — even gentle, appropriate movement — is one of the most important factors in a complete recovery.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is this cash pay? Do you take insurance?</h4>
+        <p>Resilient Bloom is a cash pay physical therapy practice in Asheville. You pay directly — no insurance delays, no authorizations. We provide superbills so you can seek out-of-network reimbursement. HSA and FSA cards are accepted.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What does a typical first visit include?</h4>
+        <p>Your first session is a full evaluation — vital signs, post-surgical red flag screening, movement assessment, pelvic floor and core function, and a full review of your symptoms. You leave with a personalized plan and tools to start healing immediately.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I be seen even if I had a vaginal birth?</h4>
+        <p>Absolutely. All postpartum bodies benefit from pelvic floor and core rehabilitation. Tearing, episiotomy, prolonged pushing — all have specific recovery needs that in-home postpartum PT in Asheville addresses directly.</p>
+      </div>
+      <div class="faq-item">
+        <h4>What areas of Asheville do you serve?</h4>
+        <p>We provide mobile physical therapy throughout all of Asheville, NC and the surrounding area. During your free consultation we'll confirm your location is within our service area.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do I need a referral from my doctor?</h4>
+        <p>North Carolina is a direct-access state — you do not need a physician referral to see a physical therapist. You can book cash pay PT in Asheville directly with Resilient Bloom at any time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <span class="section-eyebrow">Book In-Home PT · Asheville, NC</span>
+        <h2 class="section-title">Ready to start<br><em>your recovery?</em></h2>
+        <p class="section-body">Reach out to book your free consultation or ask any questions. Resilient Bloom is Asheville's cash pay, in-home physical therapy practice — your physical therapist comes to you.</p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="contact-method-icon">📞</div>
+            <div class="contact-method-text">
+              <span>Call or Text</span>
+              <a href="tel:+18283677064">(828) 367-7064</a>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-method-icon">✉️</div>
+            <div class="contact-method-text">
+              <span>Email</span>
+              <a href="mailto:hello@resilientbloompt.com">hello@resilientbloompt.com</a>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-method-icon">📍</div>
+            <div class="contact-method-text">
+              <span>Service Area</span>
+              <p>Asheville, NC &amp; Surrounding Area</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="contact-method-icon">📸</div>
+            <div class="contact-method-text">
+              <span>Instagram</span>
+              <a href="https://www.instagram.com/resilientbloom.pt?igsh=azNwamJjcGVxeDMx&utm_source=qr" target="_blank" rel="noopener">@resilientbloom.pt</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <input type="text" placeholder="First Name" required />
+            <input type="text" placeholder="Last Name" required />
+          </div>
+          <input type="email" placeholder="Email Address" required />
+          <input type="tel" placeholder="Phone Number" />
+          <select>
+            <option value="" disabled selected>I'm interested in...</option>
+            <option>C-Section Recovery</option>
+            <option>Postpartum Recovery</option>
+            <option>Pelvic Floor PT</option>
+            <option>Prenatal PT</option>
+            <option>Orthopedic / Mobile PT</option>
+            <option>Free 15-Minute Consultation</option>
+          </select>
+          <textarea placeholder="Tell us a little about where you are in your recovery or what you're experiencing..."></textarea>
+          <button type="submit" class="btn-primary">Send Message →</button>
+        </form>
+        <div id="form-success" style="display:none; background:rgba(196,149,106,0.1); border:1px solid var(--gold); padding:1.5rem; margin-top:1rem;">
+          <p style="color:var(--gold); font-family:'Cormorant Garamond',serif; font-size:1.1rem;">Thank you — we'll be in touch within 24 hours. 🌸</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    Resilient Bloom
+    <span>Concierge Physical Therapy · Asheville, NC · (828) 367-7064</span>
+  </div>
+  <div class="footer-links">
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.instagram.com/resilientbloom.pt?igsh=azNwamJjcGVxeDMx&utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <p class="footer-copy">© 2025 Resilient Bloom Concierge Physical Therapy · Asheville, NC · In-Home PT · Cash Pay</p>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    e.target.style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  }
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.getAttribute('id'); });
+    navLinks.forEach(a => { a.style.color = a.getAttribute('href') === '#' + current ? 'var(--gold)' : ''; });
+  });
+</script>
+</body>
+</html>
